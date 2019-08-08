@@ -1,0 +1,583 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 48;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		4DC02359204AE46900B0C867 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4DC02358204AE46900B0C867 /* AppDelegate.swift */; };
+		4DC0235B204AE46900B0C867 /* MovementListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4DC0235A204AE46900B0C867 /* MovementListViewController.swift */; };
+		4DC02360204AE46900B0C867 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4DC0235F204AE46900B0C867 /* Assets.xcassets */; };
+		4DC02363204AE46900B0C867 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4DC02361204AE46900B0C867 /* LaunchScreen.storyboard */; };
+		4DC0236E204AE46A00B0C867 /* MovementTrackerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4DC0236D204AE46A00B0C867 /* MovementTrackerTests.swift */; };
+		4DC02379204AE46A00B0C867 /* MovementTrackerUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4DC02378204AE46A00B0C867 /* MovementTrackerUITests.swift */; };
+		4DC023C3204AE5DE00B0C867 /* MovementTrackerEngine.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4DC023C2204AE5A500B0C867 /* MovementTrackerEngine.framework */; };
+		4DC023C4204AE5DE00B0C867 /* MovementTrackerEngine.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 4DC023C2204AE5A500B0C867 /* MovementTrackerEngine.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		4DC023EF204C023F00B0C867 /* MovementCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4DC023EE204C023F00B0C867 /* MovementCell.swift */; };
+		4DC023F1204C085800B0C867 /* MovementDataInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4DC023F0204C085800B0C867 /* MovementDataInteractor.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		4DC0236A204AE46900B0C867 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 4DC0234D204AE46900B0C867 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 4DC02354204AE46900B0C867;
+			remoteInfo = MovementTracker;
+		};
+		4DC02375204AE46A00B0C867 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 4DC0234D204AE46900B0C867 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 4DC02354204AE46900B0C867;
+			remoteInfo = MovementTracker;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		4DC023BF204AE58C00B0C867 /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				4DC023C4204AE5DE00B0C867 /* MovementTrackerEngine.framework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		4DC02355204AE46900B0C867 /* MovementTracker.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MovementTracker.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		4DC02358204AE46900B0C867 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		4DC0235A204AE46900B0C867 /* MovementListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MovementListViewController.swift; sourceTree = "<group>"; };
+		4DC0235F204AE46900B0C867 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		4DC02362204AE46900B0C867 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		4DC02364204AE46900B0C867 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		4DC02369204AE46900B0C867 /* MovementTrackerTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MovementTrackerTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		4DC0236D204AE46A00B0C867 /* MovementTrackerTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MovementTrackerTests.swift; sourceTree = "<group>"; };
+		4DC0236F204AE46A00B0C867 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		4DC02374204AE46A00B0C867 /* MovementTrackerUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MovementTrackerUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		4DC02378204AE46A00B0C867 /* MovementTrackerUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MovementTrackerUITests.swift; sourceTree = "<group>"; };
+		4DC0237A204AE46A00B0C867 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		4DC023C2204AE5A500B0C867 /* MovementTrackerEngine.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = MovementTrackerEngine.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		4DC023EE204C023F00B0C867 /* MovementCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MovementCell.swift; sourceTree = "<group>"; };
+		4DC023F0204C085800B0C867 /* MovementDataInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MovementDataInteractor.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		4DC02352204AE46900B0C867 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4DC023C3204AE5DE00B0C867 /* MovementTrackerEngine.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		4DC02366204AE46900B0C867 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		4DC02371204AE46A00B0C867 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		4DC0234C204AE46900B0C867 = {
+			isa = PBXGroup;
+			children = (
+				4DC02357204AE46900B0C867 /* MovementTracker */,
+				4DC0236C204AE46900B0C867 /* MovementTrackerTests */,
+				4DC02377204AE46A00B0C867 /* MovementTrackerUITests */,
+				4DC02356204AE46900B0C867 /* Products */,
+				4DC023C0204AE5A500B0C867 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		4DC02356204AE46900B0C867 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				4DC02355204AE46900B0C867 /* MovementTracker.app */,
+				4DC02369204AE46900B0C867 /* MovementTrackerTests.xctest */,
+				4DC02374204AE46A00B0C867 /* MovementTrackerUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		4DC02357204AE46900B0C867 /* MovementTracker */ = {
+			isa = PBXGroup;
+			children = (
+				4DC02358204AE46900B0C867 /* AppDelegate.swift */,
+				4DC023EE204C023F00B0C867 /* MovementCell.swift */,
+				4DC023F0204C085800B0C867 /* MovementDataInteractor.swift */,
+				4DC0235A204AE46900B0C867 /* MovementListViewController.swift */,
+				4DC0235F204AE46900B0C867 /* Assets.xcassets */,
+				4DC02361204AE46900B0C867 /* LaunchScreen.storyboard */,
+				4DC02364204AE46900B0C867 /* Info.plist */,
+			);
+			path = MovementTracker;
+			sourceTree = "<group>";
+		};
+		4DC0236C204AE46900B0C867 /* MovementTrackerTests */ = {
+			isa = PBXGroup;
+			children = (
+				4DC0236D204AE46A00B0C867 /* MovementTrackerTests.swift */,
+				4DC0236F204AE46A00B0C867 /* Info.plist */,
+			);
+			path = MovementTrackerTests;
+			sourceTree = "<group>";
+		};
+		4DC02377204AE46A00B0C867 /* MovementTrackerUITests */ = {
+			isa = PBXGroup;
+			children = (
+				4DC02378204AE46A00B0C867 /* MovementTrackerUITests.swift */,
+				4DC0237A204AE46A00B0C867 /* Info.plist */,
+			);
+			path = MovementTrackerUITests;
+			sourceTree = "<group>";
+		};
+		4DC023C0204AE5A500B0C867 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				4DC023C2204AE5A500B0C867 /* MovementTrackerEngine.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		4DC02354204AE46900B0C867 /* MovementTracker */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 4DC0237D204AE46A00B0C867 /* Build configuration list for PBXNativeTarget "MovementTracker" */;
+			buildPhases = (
+				4DC02351204AE46900B0C867 /* Sources */,
+				4DC02352204AE46900B0C867 /* Frameworks */,
+				4DC02353204AE46900B0C867 /* Resources */,
+				4DC023BF204AE58C00B0C867 /* Embed Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = MovementTracker;
+			productName = MovementTracker;
+			productReference = 4DC02355204AE46900B0C867 /* MovementTracker.app */;
+			productType = "com.apple.product-type.application";
+		};
+		4DC02368204AE46900B0C867 /* MovementTrackerTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 4DC02380204AE46A00B0C867 /* Build configuration list for PBXNativeTarget "MovementTrackerTests" */;
+			buildPhases = (
+				4DC02365204AE46900B0C867 /* Sources */,
+				4DC02366204AE46900B0C867 /* Frameworks */,
+				4DC02367204AE46900B0C867 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				4DC0236B204AE46900B0C867 /* PBXTargetDependency */,
+			);
+			name = MovementTrackerTests;
+			productName = MovementTrackerTests;
+			productReference = 4DC02369204AE46900B0C867 /* MovementTrackerTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		4DC02373204AE46A00B0C867 /* MovementTrackerUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 4DC02383204AE46A00B0C867 /* Build configuration list for PBXNativeTarget "MovementTrackerUITests" */;
+			buildPhases = (
+				4DC02370204AE46A00B0C867 /* Sources */,
+				4DC02371204AE46A00B0C867 /* Frameworks */,
+				4DC02372204AE46A00B0C867 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				4DC02376204AE46A00B0C867 /* PBXTargetDependency */,
+			);
+			name = MovementTrackerUITests;
+			productName = MovementTrackerUITests;
+			productReference = 4DC02374204AE46A00B0C867 /* MovementTrackerUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		4DC0234D204AE46900B0C867 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0920;
+				LastUpgradeCheck = 0920;
+				ORGANIZATIONNAME = KIAN;
+				TargetAttributes = {
+					4DC02354204AE46900B0C867 = {
+						CreatedOnToolsVersion = 9.2;
+						ProvisioningStyle = Automatic;
+						SystemCapabilities = {
+							com.apple.BackgroundModes = {
+								enabled = 1;
+							};
+						};
+					};
+					4DC02368204AE46900B0C867 = {
+						CreatedOnToolsVersion = 9.2;
+						ProvisioningStyle = Automatic;
+					};
+					4DC02373204AE46A00B0C867 = {
+						CreatedOnToolsVersion = 9.2;
+						ProvisioningStyle = Automatic;
+						TestTargetID = 4DC02354204AE46900B0C867;
+					};
+				};
+			};
+			buildConfigurationList = 4DC02350204AE46900B0C867 /* Build configuration list for PBXProject "MovementTracker" */;
+			compatibilityVersion = "Xcode 8.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 4DC0234C204AE46900B0C867;
+			productRefGroup = 4DC02356204AE46900B0C867 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				4DC02354204AE46900B0C867 /* MovementTracker */,
+				4DC02368204AE46900B0C867 /* MovementTrackerTests */,
+				4DC02373204AE46A00B0C867 /* MovementTrackerUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		4DC02353204AE46900B0C867 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4DC02363204AE46900B0C867 /* LaunchScreen.storyboard in Resources */,
+				4DC02360204AE46900B0C867 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		4DC02367204AE46900B0C867 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		4DC02372204AE46A00B0C867 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		4DC02351204AE46900B0C867 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4DC023EF204C023F00B0C867 /* MovementCell.swift in Sources */,
+				4DC0235B204AE46900B0C867 /* MovementListViewController.swift in Sources */,
+				4DC02359204AE46900B0C867 /* AppDelegate.swift in Sources */,
+				4DC023F1204C085800B0C867 /* MovementDataInteractor.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		4DC02365204AE46900B0C867 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4DC0236E204AE46A00B0C867 /* MovementTrackerTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		4DC02370204AE46A00B0C867 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4DC02379204AE46A00B0C867 /* MovementTrackerUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		4DC0236B204AE46900B0C867 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 4DC02354204AE46900B0C867 /* MovementTracker */;
+			targetProxy = 4DC0236A204AE46900B0C867 /* PBXContainerItemProxy */;
+		};
+		4DC02376204AE46A00B0C867 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 4DC02354204AE46900B0C867 /* MovementTracker */;
+			targetProxy = 4DC02375204AE46A00B0C867 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		4DC02361204AE46900B0C867 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				4DC02362204AE46900B0C867 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		4DC0237B204AE46A00B0C867 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.2;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		4DC0237C204AE46A00B0C867 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		4DC0237E204AE46A00B0C867 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = Z2T3A756FL;
+				INFOPLIST_FILE = MovementTracker/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = KIAN.MovementTracker;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		4DC0237F204AE46A00B0C867 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = Z2T3A756FL;
+				INFOPLIST_FILE = MovementTracker/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = KIAN.MovementTracker;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		4DC02381204AE46A00B0C867 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = MovementTrackerTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = KIAN.MovementTrackerTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		4DC02382204AE46A00B0C867 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = MovementTrackerTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = KIAN.MovementTrackerTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		4DC02384204AE46A00B0C867 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = MovementTrackerUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = KIAN.MovementTrackerUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = MovementTracker;
+			};
+			name = Debug;
+		};
+		4DC02385204AE46A00B0C867 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = MovementTrackerUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = KIAN.MovementTrackerUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = MovementTracker;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		4DC02350204AE46900B0C867 /* Build configuration list for PBXProject "MovementTracker" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				4DC0237B204AE46A00B0C867 /* Debug */,
+				4DC0237C204AE46A00B0C867 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		4DC0237D204AE46A00B0C867 /* Build configuration list for PBXNativeTarget "MovementTracker" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				4DC0237E204AE46A00B0C867 /* Debug */,
+				4DC0237F204AE46A00B0C867 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		4DC02380204AE46A00B0C867 /* Build configuration list for PBXNativeTarget "MovementTrackerTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				4DC02381204AE46A00B0C867 /* Debug */,
+				4DC02382204AE46A00B0C867 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		4DC02383204AE46A00B0C867 /* Build configuration list for PBXNativeTarget "MovementTrackerUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				4DC02384204AE46A00B0C867 /* Debug */,
+				4DC02385204AE46A00B0C867 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 4DC0234D204AE46900B0C867 /* Project object */;
+}
