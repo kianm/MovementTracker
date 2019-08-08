@@ -1,0 +1,1 @@
+simple demo iOS module and app, receiving background location and activity updates, persisting them with core data, and showing them using coredata fetch controller and a generic table view adapter. 
